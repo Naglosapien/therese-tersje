@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPPGAVE</title>
+
+    <script src="model.js"></script>
+    <script src="fargeview.js"></script>
+    <script src="controller.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+    <div id="app"></div>
+
+
+
+
+
+
+
+<!-- ---------HTML EKSEMPEL------ -->
+
+<center>
+    <p>FARGER</p>
+    <div id="info"></div>
+    <input id="blå" type="checkbox" onchange="farge()" />Blå<br />
+    <input id="rød" type="checkbox" onchange="farge()" />Rød<br />
+    <input id="gul" type="checkbox" onchange="farge()" />Gul<br />
+</center>
+
+    <script>
+    var fargeDiv = document.getElementById('farge');
+    var chk1 = document.getElementById('blå');
+    var chk2 = document.getElementById('rød');
+    var chk3 = document.getElementById('gul');
+
+    farge();
+    function farge() {
+    var isChecked1 = chk1.checked;
+    var isChecked2 = chk2.checked;
+    var isChecked3 = chk3.checked;
+ }
+    </script>
+</body>
+</html>
